@@ -1,3 +1,10 @@
+
+body {
+    background-image: url("/images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
