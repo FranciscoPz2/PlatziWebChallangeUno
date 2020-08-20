@@ -10,13 +10,12 @@ body {
   
 }
 header{
-  
+
 }
 footer{
   margin: 2%;
   text-align:end ;
 }
-
 
 #imagen{
   
@@ -30,12 +29,14 @@ footer{
   
 }
 #container {
-  color     : white;
+  color                : white;
   display              : grid;
   grid-template-columns: auto auto auto auto;
   grid-gap             : 10px;
   padding              : 10px;
 }
+
+
 
 /*TODO MEDIAS QUERIES */
 [class*="col-"] {
