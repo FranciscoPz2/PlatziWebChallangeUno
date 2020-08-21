@@ -21,6 +21,7 @@ img{
 }
 .logors{
   width: 3%;
+  border-radius: 50%;
 }
 .logo{
   width: 14%;
@@ -139,11 +140,12 @@ button{
   }
   
   footer{
-    text-align: end ;
+    text-align: center ;
     margin    : 16% 0 0 0%;
   }
   .logors{
-    width: 10%;
+    width: 8%;
+    border-radius: 50%;
   }
   .logo{
     width: 41%;
@@ -156,7 +158,7 @@ button{
 
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 600px and up) 
 @media only screen and (min-width: 600px) {
   
   .col-s-1 {width: 8.33%;}
@@ -232,7 +234,7 @@ button{
   .logo{
     width: 41%;
   }
-}
+}*/
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -256,6 +258,14 @@ button{
   }
   footer{
     margin: -3% 3% 0 0;
+  }
+  #texto h4{
+    font-weight  : 400;
+    font-family  : 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+    font-size    : 1em;
+    opacity      : 0.6;
+  
   }
 }
 
@@ -282,6 +292,14 @@ button{
   footer{
     margin: -3% 3% 0 0;
   }
+  #texto h4{
+    font-weight  : 400;
+    font-family  : 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+    font-size    : 1.4em;
+    opacity      : 0.6;
+  
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -307,5 +325,13 @@ button{
   }
   footer{
     margin: -3% 3% 0 0;
+  }
+  #texto h4{
+    font-weight  : 400;
+    font-family  : 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+    font-size    : 1.5em;
+    opacity      : 0.6;
+  
   }
 }
