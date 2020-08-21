@@ -5,36 +5,65 @@ body {
     background-repeat    : no-repeat;
     background-size      : cover;
     background-attachment: fixed;
-    margin               : 0;
     position             : relative;
+    margin               : 2% 5%;
+    transition           : all 0.3s;
+    overflow             : hidden;
   
 }
-header{
 
-}
 footer{
-  margin: 2%;
   text-align:end ;
 }
 
-#imagen{
-  
+img{
+  padding: 0% 1% 0 0 ;
 }
-#texto {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.logors{
+  width: 3%;
 }
-#texto p{
-  font-size: 11px;
-  text-align: center center;
-  
+.logo{
+  width: 14%;
+}
+#texto h1 {
+  font-weight: 700;
+  font-size    : 2.4em;
+  font-family: 'Poppins', sans-serif;
+ 
+}
+#texto h4{
+  font-weight  : 400;
+  font-family  : 'Open Sans', sans-serif;
+  margin-bottom: 30px;
+  font-size    : 1em;
+  opacity      : 0.6;
+
 }
 #container {
   color                : white;
   display              : grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto ;
   grid-gap             : 10px;
-  padding              : 10px;
+  margin               : 5% 0% ;
 }
+#imagen{
+  width: 100%;
+  height: auto;
+}
+button{
+  background-color: white;
+  border-radius   : 30px;
+  border          : none;
+  padding         : 15px 80px;
+  color           : hsl(257, 40%, 49%);
+  box-shadow      : 1px 3px 6px rgba(0, 0, 0, 0.4);
+  font-family     : 'Open Sans', sans-serif;
+  font-weight     : 400;
+  font-size       : 1.05em;
+  transition      : all 0.3s;
+  cursor          : pointer;
+}
+
 
 
 
@@ -45,6 +74,7 @@ footer{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
   .col-s-3 {width: 25%;}
@@ -57,23 +87,201 @@ footer{
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
-  background-image: url("../images/bg-mobile.svg");
+  body{
+    background-image     : url("../images/bg-mobile.svg");
+    background-size      : contain;
+    background-attachment: fixed;
+    position             : relative;
+    margin               : 8% 12%;
+    transition           : all 0.3s;
+    overflow             : auto;  
+  }
+  #container{
+    grid-template-columns: 1fr;
+    
+  }
+  button{
+    background-color: white;
+    border-radius   : 30px;
+    border          : none;
+    padding         : 8px 82px;
+    color           : hsl(257, 40%, 49%);
+    box-shadow      : 1px 3px 6px rgba(0, 0, 0, 0.4);
+    font-family     : 'Open Sans', sans-serif;
+    font-weight     : 400;
+    font-size       : 1.05em;
+    transition      : all 0.3s;
+    cursor          : pointer;
+  }
+  #texto{
+    text-align: center;
+    margin: 0%;
+  }
+  #texto h1 {
+    font-weight: 500;
+    font-size  : 1.4em;
+    font-family: 'Poppins', sans-serif;
+  }
+  #texto h4{
+    font-weight  : 400;
+    font-family  : 'Open Sans', sans-serif;
+    margin-bottom: 8%;
+    font-size    : 1em;
+  
+  }
+  img{
+    max-width: 100%;
+  }
+  #imagen{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  
+  footer{
+    text-align: end ;
+    margin    : 16% 0 0 0%;
+  }
+  .logors{
+    width: 10%;
+  }
+  .logo{
+    width: 41%;
+  }
+  header{
+    margin: 0 0 14% 0;
+
+  }
+  
 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+  
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  body{
+    background-image     : url("../images/bg-mobile.svg");
+    background-size      : contain;
+    background-attachment: fixed;
+    position             : relative;
+    margin               : 8% 12%;
+    transition           : all 0.3s;
+    overflow             : auto;  
+  }
+  #container{
+    grid-template-columns: 1fr;
+    
+  }
+  button{
+    background-color: white;
+    border-radius   : 30px;
+    border          : none;
+    padding         : 8px 82px;
+    color           : hsl(257, 40%, 49%);
+    box-shadow      : 1px 3px 6px rgba(0, 0, 0, 0.4);
+    font-family     : 'Open Sans', sans-serif;
+    font-weight     : 400;
+    font-size       : 1.05em;
+    transition      : all 0.3s;
+    cursor          : pointer;
+  }
+  #texto{
+    text-align: center;
+    margin: 0%;
+  }
+  #texto h1 {
+    font-weight: 500;
+    font-size  : 1.4em;
+    font-family: 'Poppins', sans-serif;
+  }
+  #texto h4{
+    font-weight  : 400;
+    font-family  : 'Open Sans', sans-serif;
+    margin-bottom: 8%;
+    font-size    : 1em;
+  
+  }
+  img{
+    max-width: 100%;
+  }
+  #imagen{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  
+  footer{
+    text-align: end ;
+    margin    : 16% 0 0 0%;
+  }
+  .logors{
+    width: 10%;
+  }
+  .logo{
+    width: 41%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  #texto{
+       padding: 2% 0% 0 7%;
+  }
+  #imagen{
+    width: 100%;
+  }
+  footer{
+    margin: -3% 3% 0 0;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  #texto{
+       padding: 2% 0% 0 7%;
+  }
+  #imagen{
+   width: 100%;
+  }
+  footer{
+    margin: -3% 3% 0 0;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -91,4 +299,13 @@ footer{
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+  #texto{
+       padding: 2% 0% 0 7%;
+  }
+  #imagen{
+   width: 100%;
+  }
+  footer{
+    margin: -3% 3% 0 0;
+  }
 }
